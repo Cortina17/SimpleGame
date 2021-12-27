@@ -1,6 +1,6 @@
 :root{
     --primary: #8A4FFF;
-    --dark: #131A26;
+    --dark: #000000;
     --grey: #CCC;
     --light: #EEE;
 }
@@ -9,8 +9,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-
 }
 
 body {
@@ -130,4 +128,15 @@ main {
 
 .board.turn-o .cell:not(.x):not(.o):hover::before{
     border-color: var(--grey);
+}
+
+.reset{
+    display: flex;
+
+}
+
+#reset-btn{
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
 }
