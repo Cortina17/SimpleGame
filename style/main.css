@@ -1,5 +1,5 @@
 :root{
-    --primary: #8A4FFF;
+    --primary: #4a4a4b;
     --dark: #000000;
     --grey: #CCC;
     --light: #EEE;
@@ -28,7 +28,7 @@ header{
 }
 
 header h1 {
-    color: #FFF;
+    color: var(--grey);
     font-size: 42px;
     text-transform: uppercase;
     text-shadow: -4px 1px var(--primary);
@@ -38,6 +38,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     flex: 1 1 0%;
 }
 
@@ -128,15 +129,4 @@ main {
 
 .board.turn-o .cell:not(.x):not(.o):hover::before{
     border-color: var(--grey);
-}
-
-.reset{
-    display: flex;
-
-}
-
-#reset-btn{
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
 }
